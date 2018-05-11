@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/', express.static(path.join(__dirname + '/public')));
+app.use('/en', express.static(path.join(__dirname + '/public/en')));
 
 const server = http.createServer(app);
 
